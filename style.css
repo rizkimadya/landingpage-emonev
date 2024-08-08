@@ -10,8 +10,10 @@
 }
 
 .navbar.scrolled {
-  background-color: #374E9D;
+  background-color: #374E9D; /* Warna latar belakang saat di-scroll */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan dengan offset, blur, dan transparansi */
 }
+
 
 
 .navbar .navbar-toggler {
@@ -93,21 +95,214 @@
   width: 64%;
   margin: 20px 0 40px 0;
 }
-.hero .content .btn-demo{
+
+.hero .content .btn-demo {
   padding: 16px 60px;
   border-radius: 54px;
   background-color: #FCCC00;
-  color:#151A30 ;
+  color: #151A30;
   text-decoration: none;
 }
 
-.hero .content .btn-demo:hover{
+.hero .content .btn-demo:hover {
   border: 1px solid #FCCC00;
   background-color: #fff;
 }
 
 /* hero */
 
+
+/* about */
+.about {
+  padding-top: 50px;
+}
+
+.about .card {
+  background: #F6F8FF;
+  border-radius: 48px;
+  padding: 60px;
+  background-image: url('image/bg_about.svg');
+  background-position: top right;
+  background-size: 50% auto; /* Lebar 150px, tinggi otomatis untuk menjaga aspek rasio */
+  border: none;
+  background-repeat: no-repeat;
+}
+
+.about .title {
+  font-family: Pathway Extreme;
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 105.6px;
+  letter-spacing: 0.029em;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about .title-ket {
+  font-family: Pathway Extreme;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0.009em;
+  text-align: left;
+  color: #151A30;
+}
+
+.about .ket{
+  font-family: Pathway Extreme;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30.96px;
+  letter-spacing: 0.029em;
+  text-align: justify;
+  color: #151A30;
+}
+
+.about .btn-download{
+  background-color: #fccc00;
+  border: none;
+  color: #000;
+  border-radius: 50px;
+  padding: 16px 28px;
+  font-family: Pathway Extreme, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+/* about */
+
+
+/* share page */
+.share-page{
+  padding-top: 40px;
+}
+/* share page */
+
+/* contact */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Lily+Script+One&family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+
+#contact {
+    padding: 48px 0 80px 0;
+}
+
+#contact .card {
+    background-color: #F6F8FF;
+    border-radius: 47px;
+    border: none;
+}
+
+#contact .title {
+    font-family: Pathway Extreme;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 41.28px;
+    letter-spacing: 0.029em;
+    text-align: left;
+    color: #848AA5;
+}
+
+#contact .subtitle {
+    font-family: Pathway Extreme;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 63px;
+    letter-spacing: 0.009em;
+    text-align: left;
+}
+
+#contact .keterangan {
+    font-family: Pathway Extreme;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.52px;
+    letter-spacing: 0.029em;
+    text-align: left;
+    color: #2D2926;
+}
+
+#contact .btn-get-in {
+    font-family: Pathway Extreme;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.009em;
+    text-align: center;
+    color: #555A71;
+    background-color: #FCCC00;
+    text-decoration: none;
+    border-radius: 120px;
+    padding: 18px 38px;
+    margin-top: 34px;
+    display: inline-block;
+}
+/* contact */
+
+
+/* footer */
+.footer-img img {
+  height: 29px;
+  margin-bottom: 52px;
+}
+
+.address img {
+  margin-bottom: 24px;
+}
+
+.address ul {
+  list-style: none;
+}
+
+.address .title {
+  color: #10172f;
+  font-size: 16px;
+  font-family: Pathway Extreme, sans-serif;
+  font-weight: 300;
+}
+
+.address .title:hover {
+  color: #afafaf;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.address .copyright {
+  color: #848aa5;
+  font-family: Pathway Extreme, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menus-footer .title {
+  color: #10172f;
+  font-size: 24px;
+  font-family: Pathway Extreme, sans-serif;
+  font-weight: 400;
+  margin-bottom: 42px;
+}
+
+.menus-footer .sub-title a {
+  text-decoration: none;
+  color: #374e9d;
+  font-size: 16px;
+  font-family: Pathway Extreme, sans-serif;
+  font-weight: 500;
+}
+
+.menus-footer p {
+  line-height: 10px;
+}
+
+.menus-footer .sub-title a:hover {
+  text-decoration: underline 1.8px solid #374e9d;
+}
+
+.bg-footer {
+  float: right;
+}
+
+/* Section Footer End */
+/* footer */
 
 @media (max-width: 575.98px) {
   .navbar .btn-contact {
