@@ -176,6 +176,143 @@
 /* about */
 
 
+/* kenapa */
+.kenapa {
+  padding-top: 50px;
+  position: relative;
+  /* Set posisi relatif pada parent container */
+}
+
+.kenapa .title {
+  font-family: Pathway Extreme;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 92px;
+  letter-spacing: 0.029em;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.kenapa .title span {
+  display: block;
+  color: #374E9D;
+}
+
+.kenapa .bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: auto;
+  z-index: -1;
+  margin-top: 50px;
+}
+
+.kenapa .ket {
+  font-family: Pathway Extreme;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 41.28px;
+  letter-spacing: 0.029em;
+  text-align: justify;
+}
+
+/* kenapa */
+
+
+/* entri */
+.entri {
+  padding-top: 50px;
+}
+
+.entri .title {
+  font-family: Pathway Extreme;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 95.04px;
+  letter-spacing: 0.029em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.entri .card {
+  padding: 40px;
+  box-shadow: 0px 4px 80px 0px #00000012;
+  border-radius: 38px;
+  border: none;
+  margin-bottom: 24px;
+}
+
+.entri .card img {
+  height: 150px;
+  width: auto;
+  display: flex;
+  margin: 0 auto;
+}
+
+.entri .title-ket {
+  margin: 30px 0 20px 0;
+  font-family: Pathway Extreme;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 43.39px;
+  text-align: center;
+}
+
+.entri .ket {
+  font-family: Pathway Extreme;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24.41px;
+  text-align: center;
+
+}
+
+/* entri */
+
+
+/* laporan */
+.laporan {
+  padding-top: 50px;
+  position: relative;
+}
+
+.laporan .title {
+  font-family: Pathway Extreme;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 64.4px;
+  letter-spacing: 0.029em;
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.laporan .bg-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: auto;
+  z-index: -1;
+}
+
+.laporan .card {
+  padding: 10px;
+  box-shadow: 0px 4px 80px 0px #00000012;
+  border-radius: 38px;
+  border: 0;
+}
+
+.laporan .card .ket {
+  font-family: Pathway Extreme;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22.08px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* laporan */
 
 /* client */
 .client {
@@ -390,4 +527,270 @@
     text-align: center;
     justify-content: center;
   }
+
+  /* hero */
+  .hero .content {
+    padding-top: 140px;
+    text-align: center;
+  }
+
+  .hero .content .logo {
+    width: 60%;
+  }
+
+  .hero .content .title {
+    font-size: 36px;
+    line-height: normal;
+    font-family: Pathway Extreme;
+    font-weight: 400;
+    letter-spacing: 0.029em;
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+
+  .hero .content .subtitle {
+    font-family: Pathway Extreme;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.6px;
+    letter-spacing: 0.029em;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    margin: 20px 0 40px 0;
+  }
+
+  .hero .content .btn-demo {
+    padding: 16px 60px;
+    border-radius: 54px;
+    background-color: #FCCC00;
+    color: #151A30;
+    text-decoration: none;
+  }
+
+  .about {
+    padding-top: 50px;
+  }
+  
+  .about .card {
+    padding: 40px;
+    background: #F6F8FF;
+    border-radius: 48px;
+    background-image: url('image/bg_about.svg');
+    background-position: top right;
+    background-size: 80% auto;
+    border: none;
+    background-repeat: no-repeat;
+  }
+  
+  .about .title {
+    font-family: Pathway Extreme;
+    font-size: 36px;
+    line-height: normal;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  .about img{
+    margin-bottom: 30px;
+  }
+  
+  .about .title-ket {
+    font-size: 24px;
+  }
+  
+  .about .ket {
+    font-size: 16px;
+  }
+  
+  .about .btn-download {
+    background-color: #fccc00;
+    border: none;
+    color: #000;
+    border-radius: 50px;
+    /* padding: 16px 20px; */
+    width: 100%;
+    font-family: Pathway Extreme, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .about .btn-download img{
+    margin-bottom: 6px;
+  }
+  
+
+  .kenapa {
+    padding-top: 40px;
+    position: relative;
+    /* Set posisi relatif pada parent container */
+  }
+  
+  .kenapa .title {
+    font-size: 36px;
+    line-height: normal;
+    margin-bottom: 40px;
+  }
+  
+  .kenapa .title span {
+    display: block;
+    color: #374E9D;
+  }
+  
+  .kenapa .bg-image {
+    display: none;
+  }
+  
+  .kenapa img{
+    width: 100%;
+  }
+  .kenapa .ket {
+    font-family: Pathway Extreme;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 41.28px;
+    letter-spacing: 0.029em;
+    text-align: justify;
+  }
+
+
+  .entri {
+    padding-top: 40px;
+  }
+  
+  .entri .title {
+    font-family: Pathway Extreme;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.029em;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .entri .card {
+    padding: 40px;
+    box-shadow: 0px 4px 80px 0px #00000012;
+    border-radius: 38px;
+    border: none;
+    margin-bottom: 24px;
+  }
+  
+  .entri .card img {
+    height: 150px;
+    width: auto;
+    display: flex;
+    margin: 0 auto;
+  }
+  
+  .entri .title-ket {
+    margin: 30px 0 20px 0;
+    font-family: Pathway Extreme;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 43.39px;
+    text-align: center;
+  }
+  
+  .entri .ket {
+    font-family: Pathway Extreme;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24.41px;
+    text-align: center;
+  }
+
+  .laporan {
+    padding-top: 40px;
+    position: relative;
+  }
+  
+  .laporan .title {
+    font-size: 36px;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  
+  .laporan .bg-image {
+    display: none;
+  }
+  
+  .laporan .card {
+    padding: 10px;
+    box-shadow: 0px 4px 80px 0px #00000012;
+    border-radius: 38px;
+    border: 0;
+  }
+  
+  .laporan .card .ket {
+    font-family: Pathway Extreme;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.08px;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .laporan .col-0{
+    display: none;
+  }
+
+  .client {
+    padding-top: 40px;
+  }
+  
+  .client .title {
+    font-family: Pathway Extreme;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .client .card {
+    border: none;
+    margin-bottom: 20px;
+  }
+
+  .client .card .ket {
+    font-family: Pathway Extreme;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+    color: #374E9D;
+    margin-top: 10px;
+  }
+
+  .lkpp {
+    padding-top: 40px;
+  }
+  
+  .lkpp .card {
+    background: #F6F8FF;
+    padding: 40px;
+    border: none;
+    border-radius: 48px;
+  }
+  
+  .lkpp .title {
+    font-size: 20px;
+    line-height: normal;
+    margin-top: 12px;
+  }
+  
+  .lkpp .subtitle {
+    font-family: Pathway Extreme;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.52px;
+    letter-spacing: 0.029em;
+    text-align: left;
+  
+  }
+  
 }
