@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sistem Informasi E-Monev</title>
+    <title>E-Monev | Afila Media Karya</title>
     <meta name="description"
         content="Sistem Informasi E-Monev adalah sistem yang digunakan untuk monitoring dan evaluasi rencana pembangunan daerah yang transparan, cepat, terintegrasi, konsisten, dan sesuai dengan aturan yang berlaku.">
     <meta name="keywords" content="E-Monev, Sistem Informasi, Monitoring, Evaluasi, Pembangunan Daerah">
 
     <!-- Favicon -->
-    <link href="image/logo-afila.svg" rel="icon" type="image/x-icon">
+    <link href="https://afila.co.id/landing_page/assets/image/Logo-img.svg" rel="icon" type="image/x-icon">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -33,42 +33,78 @@
     <meta name="twitter:site" content="@yourtwitterhandle">
 
     <link rel="stylesheet" href="style.css">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container py-2">
-            <a class="navbar-brand" href="#">
-                <img src="image/logo.svg" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Service</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Product</a>
-                    </li>
-                </ul>
-                <a href="https://wa.me/6281144411201?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Anda"
-                    target="_blank" class="btn-contact">Contact Us <span class="ms-2"><img src="image/icon-whatsapp.svg"
-                            alt=""></span></a>
+    <div class="navbar-desktop">
+        <nav class="navbar fixed-top">
+            <div class="container-fluid px-5">
+                <a href="#" class="logo text-decoration-none">
+                    <img src="image/logo-afila.svg" alt="" loading="lazy">
+                </a>
+                <div class="menus d-flex mt-3">
+                    <ul class="menu">
+                        <li class="list-menu"><a href="https://afila.co.id/">HOME</a></li>
+                        <li class="list-menu"><a href="https://afila.co.id/#About">ABOUT</a></li>
+                        <li class="list-menu"><a href="https://afila.co.id/#Service">SERVICE</a></li>
+                        <li class="list-menu"><a href="https://afila.co.id/#Product">PRODUCT</a></li>
+                        <li class="list-menu"><a href="https://afila.co.id/#Portfolio">PORTFOLIO</a></li>
+                        <li class="list-menu"><a href="https://afila.co.id/#testimoni">TESTIMONI</a></li>
+                        <li class="list-menu"><a href="https://afila.co.id/#gallery">GALERY</a></li>
+                        <li class="list-menu"><a href="https://afila.co.id/#team">TEAM</a></li>
+                        <li class="list-menu"><a href="https://afila.co.id/#news-blog">NEWS</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="https://wa.me/6281144411201?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Anda"
+                        target="_blank" class="btn-contact">Contact Us <span class="ms-2"><img
+                                src="image/icon-whatsapp.svg" alt=""></span></a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
+    <!-- Navbar Mobile -->
+    <div class="navbar-mobile">
+        <input type="checkbox" id="menu">
+        <!-- END MOBILE SCREEN -->
+        <header>
+            <a href="#" class="logo text-decoration-none">
+                <img src="image/logo-afila.svg" alt="">
+            </a>
+            <!-- MOBILE SCREEN -->
+            <div class="bg-navbar">
+                <div class="bg-menu">
+                    <label for="menu">
+                        <div style="height: 0.1px; background-color: black; width: 30px; margin-bottom: 8px;"></div>
+                        <div style="height: 0.1px; background-color: black; width: 30px; margin-bottom: 8px;"></div>
+                        <div style="height: 0.1px; background-color: black; width: 30px; margin-bottom: 8px;"></div>
+                    </label>
+                </div>
+            </div>
+            <!-- END MOBILE SCREEN -->
+            <nav>
+                <a href="https://afila.co.id/">HOME</a>
+                <a href="https://afila.co.id/#About">ABOUT</a>
+                <a href="https://afila.co.id/#Service">SERVICE</a>
+                <a href="https://afila.co.id/#Product">PRODUCT</a>
+                <a href="https://afila.co.id/#Portfolio">PORTFOLIO</a>
+                <a href="https://afila.co.id/#testimoni">TESTIMONI</a>
+                <a href="https://afila.co.id/#gallery">GALERY</a>
+                <a href="https://afila.co.id/#team">TEAM</a>
+                <a href="https://afila.co.id/#news-blog">NEWS</a>
+
+                <a href="https://wa.me/6281144411201?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Anda"
+                    target="_blank" class="btn-contact">
+                    Contact Us <span class="ms-2"><img src="image/icon-whatsapp.svg" alt=""></span>
+                </a>
+            </nav>
+        </header>
+    </div>
+    <!-- Navbar Mobile -->
 
 
     <section class="hero">
@@ -76,42 +112,115 @@
             <div class="row">
                 <div class="col-12">
                     <div class="content">
-                        <img class="logo" src="image/emonev.svg" alt="">
-                        <p class="title">Elektronik <span> Monitoring <br>
-                                dan</span> Evaluasi</p>
-                        <div style="height: 0.5px; background-color: #FCCC00; width: 60%; margin: 0 auto;"></div>
-                        <div class="d-flex justify-content-center">
-                            <p class="subtitle"><b>E-Monev</b> adalah aplikasi khusus yang dibuat untuk pemerintah,
-                                digunakan untuk monitoring dan evaluasi serta membantu pelaksanaan SPBE</p>
+                        <img data-aos="zoom-in" data-aos-duration="2300" class="logo" src="image/emonev.svg" alt="">
+                        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                            <p class="title">Elektronik <span> Monitoring <br>
+                                    dan</span> Evaluasi</p>
+                            <div style="height: 0.5px; background-color: #FCCC00; width: 60%; margin: 0 auto;"></div>
+                            <div class="d-flex justify-content-center">
+                                <p class="subtitle"><b>E-Monev</b> adalah aplikasi khusus yang dibuat untuk pemerintah,
+                                    digunakan untuk monitoring dan evaluasi serta membantu pelaksanaan SPBE</p>
+                            </div>
+                            <button type="button" class="btn-demo" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <span>
+                                    <img src="image/demoapk.svg" width="24px" alt="">
+                                </span>
+                                Demo Aplikasi
+                            </button>
                         </div>
-                        <a class="btn-demo" href="#">
-                            <span>
-                                <img src="image/demoapk.svg" width="24px" alt="">
-                            </span>
-                            Demo Aplikasi
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Modal -->
+    <div class="modal modal-lg fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Form Demo Aplikasi E-Monev</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="demoForm" class="form-data">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="instansi" class="form-label">Nama Instansi</label>
+                                    <input type="text" class="form-control" id="instansi" name="instansi"
+                                        placeholder="Masukkan Nama Instansi" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="nama" class="form-label">Nama</label>
+                                    <input type="text" class="form-control" id="nama" name="nama"
+                                        placeholder="Masukkan Nama" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="jabatan" class="form-label">Jabatan</label>
+                                    <input type="text" class="form-control" id="jabatan" name="jabatan"
+                                        placeholder="Masukkan Jabatan" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="notelp" class="form-label">No. Telp</label>
+                                    <input type="number" class="form-control" id="notelp" name="notelp"
+                                        placeholder="Masukkan No Telp" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Masukkan Email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Jenis Dokumen</label>
+                                    <div class="d-flex">
+                                        <div class="form-check custom-radio">
+                                            <input class="form-check-input" type="radio" name="dokumen" id="rpjmd"
+                                                value="rpjmd" required>
+                                            <label class="form-check-label" for="rpjmd">RPJMD</label>
+                                        </div>
+                                        <div class="form-check custom-radio">
+                                            <input class="form-check-input" type="radio" name="dokumen" id="rpd"
+                                                value="rpd" required>
+                                            <label class="form-check-label" for="rpd">RPD</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button" class="btn text-danger" style="background: #EA443E29;"
+                                data-bs-dismiss="modal">Batal</button>
+                            <button type="submit" class="btn" style="background: #0D47A1; color: #fff;"
+                                id="submitButton">Kirim</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <section class="about">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="card">
-                        <p class="title">Apa Itu E-Monev?</p>
+                        <p class="title" data-aos="zoom-in" data-aos-duration="2000">Apa Itu E-Monev?</p>
                         <div class="row">
-                            <div class="col-md-7 align-self-center">
+                            <div class="col-md-7 align-self-center" data-aos="zoom-in" data-aos-duration="2300">
                                 <img src="image/image-about.svg" alt="" width="100%">
                             </div>
                             <div class="col-md-5">
                                 <div class="mb-4">
-                                    <p class="title-ket">
+                                    <p class="title-ket" data-aos="zoom-in" data-aos-duration="2000">
                                         Monitoring & Evaluasi
                                     </p>
-                                    <p class="ket">
+                                    <p class="ket" data-aos="zoom-in" data-aos-duration="2000">
                                         Sistem Informasi E- Monev merupakan sebuah sistem yang dipergunakan untuk
                                         memantau, mengendalikan dan mengevaluasi rencana pembangunan daerah yang
                                         transparan, cepat, terintegrasi, konsisten dan sesuai dengan aturan yang
@@ -119,10 +228,10 @@
                                     </p>
                                 </div>
                                 <div class="mb-5">
-                                    <p class="title-ket">
+                                    <p class="title-ket" data-aos="zoom-in" data-aos-duration="2300">
                                         Sasaran E-monev
                                     </p>
-                                    <p class="ket">
+                                    <p class="ket" data-aos="zoom-in" data-aos-duration="2400">
                                         Sasaran dari kegiatan ini adalah BAPPEDA atau SKPD yang melaksanakan tugas untuk
                                         penyusunan, pengendalian, dan evaluasi pelaksanaan rencana pembangunan Daerah.
                                         Aplikasi E-Monev akan membantu terjadinya standarisasi nomenkelatur program,
@@ -130,7 +239,8 @@
                                         yang berlaku.
                                     </p>
                                 </div>
-                                <a class="btn-download" href="#">
+                                <a class="btn-download" data-aos="zoom-down" data-aos-duration="2400" target="_blank"
+                                    href="https://drive.google.com/file/d/1BCd0eafiHiVoIHjbPuSYQMx6l1MuRs4k/view">
                                     <span>
                                         <img src="image/demoapk.svg" width="24px" alt="">
                                     </span>
@@ -150,31 +260,34 @@
                 <div class="col-md-4">
                 </div>
                 <div class="col-md-8">
-                    <p class="title">Kenapa Memilih
+                    <p class="title" data-aos="fade-right" data-aos-duration="2000">Kenapa Memilih
                         <span>E-Monev Afila?</span>
                     </p>
 
                     <div class="row">
-                        <div class="col-md-2 col-3">
+                        <div class="col-md-2 col-3" data-aos="fade-right" data-aos-duration="2000">
                             <img src="image/kenapa2.svg" alt="">
                         </div>
-                        <div class="col-md-10 col-9">
+                        <div class="col-md-10 col-9" data-aos="fade-right" data-aos-duration="2000">
                             <p class="ket">Aplikasi e-Monev dari afila mempunyai Output Laporan Yang Lengkap dan Sesuai
                                 dengan Regulasi seperti Permendagri 86 Tahun 2017, Permendagri 90 Tahun 2019, Peraturan
                                 Pemerintah No 39 Tahun 2006, Perpres No 7 Tahun 2022, sehingga format laporan sudah
                                 tidak diragukan lagi.</p>
                         </div>
-                        <div class="col-md-2 col-3">
+                        <div class="col-md-2 col-3" data-aos="fade-right" data-aos-duration="2000">
                             <img src="image/kenapa1.svg" alt="">
                         </div>
-                        <div class="col-md-10 col-9">
-                            <p class="ket">Demi memberikan kesan yang baik, e-Monev Afila menampilkan Visualisasi Data Yang Mudah di Baca, sehingga pimpinan dapat menjadikan data sebagai pendukung pengambilan keputusan.</p>
+                        <div class="col-md-10 col-9" data-aos="fade-right" data-aos-duration="2000">
+                            <p class="ket">Demi memberikan kesan yang baik, e-Monev Afila menampilkan Visualisasi Data
+                                Yang Mudah di Baca, sehingga pimpinan dapat menjadikan data sebagai pendukung
+                                pengambilan keputusan.</p>
                         </div>
-                        <div class="col-md-2 col-3">
+                        <div class="col-md-2 col-3" data-aos="fade-right" data-aos-duration="2000">
                             <img src="image/kenapa3.svg" alt="">
                         </div>
-                        <div class="col-md-10 col-9">
-                            <p class="ket">Tim Afila Mendampingi implementasi aplikasi dengan baik dan berkelanjutan.</p>
+                        <div class="col-md-10 col-9" data-aos="fade-right" data-aos-duration="2000">
+                            <p class="ket">Tim Afila Mendampingi implementasi aplikasi dengan baik dan berkelanjutan.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -186,59 +299,66 @@
 
     <section class="entri">
         <div class="container">
-            <p class="title">Entri Data Perencanaan</p>
+            <p class="title" data-aos="zoom-in" data-aos-duration="2000">Entri Data Perencanaan</p>
             <div class="row d-flex">
-                <div class="col-md-4 d-flex">
+                <div class="col-md-4 d-flex" data-aos="zoom-in" data-aos-duration="2000">
                     <div class="card">
                         <img src="image/dpa.png" alt="">
                         <div class="text-center">
                             <p class="title-ket">DPA</p>
-                            <p class="ket">Admin OPD menginput Data DPA yaitu kegiatan, Penanggung Jawab, Sumber Dana, Jenis Belanja, Metode Pelaksanaan, Nilai Pagu dan Tolak Ukur.</p>
+                            <p class="ket">Admin OPD menginput Data DPA yaitu kegiatan, Penanggung Jawab, Sumber Dana,
+                                Jenis Belanja, Metode Pelaksanaan, Nilai Pagu dan Tolak Ukur.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex">
+                <div class="col-md-4 d-flex" data-aos="zoom-in" data-aos-duration="2600">
                     <div class="card">
                         <img src="image/renstra.png" alt="">
                         <div class="text-center">
                             <p class="title-ket">Renstra</p>
-                            <p class="ket">Admin OPD menginput Data Renstra yaitu Tujuan, Sasaran Program, Kegiatan, Sub Kegiatan dan menentukan target kinerja dan keuangan tahunan selama periode renstra.</p>
+                            <p class="ket">Admin OPD menginput Data Renstra yaitu Tujuan, Sasaran Program, Kegiatan, Sub
+                                Kegiatan dan menentukan target kinerja dan keuangan tahunan selama periode renstra.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex">
+                <div class="col-md-4 d-flex" data-aos="zoom-in" data-aos-duration="2300">
                     <div class="card">
                         <img src="image/paket.png" alt="">
                         <div class="text-center">
                             <p class="title-ket">Paket</p>
-                            <p class="ket">Admin OPD menginput Data Paket yaitu Nama Paket, Anggaran, Penerima manfaat, Volume, Lokasi. Untuk sumber dana DAK Fisisk memilih rincian Paket untuk Laporan Kemajuan.</p>
+                            <p class="ket">Admin OPD menginput Data Paket yaitu Nama Paket, Anggaran, Penerima manfaat,
+                                Volume, Lokasi. Untuk sumber dana DAK Fisisk memilih rincian Paket untuk Laporan
+                                Kemajuan.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex">
+                <div class="col-md-4 d-flex" data-aos="zoom-in" data-aos-duration="2000">
                     <div class="card">
                         <img src="image/realisasi.png" alt="">
                         <div class="text-center">
                             <p class="title-ket">Realisasi Paket</p>
-                            <p class="ket">Penginputan data realisasi paket swakelola/kontrak kinerja, fisik dan keuangan dilakukan pertriwulan..</p>
+                            <p class="ket">Penginputan data realisasi paket swakelola/kontrak kinerja, fisik dan
+                                keuangan dilakukan pertriwulan..</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex">
+                <div class="col-md-4 d-flex" data-aos="zoom-in" data-aos-duration="2600">
                     <div class="card">
                         <img src="image/renstra.png" alt="">
                         <div class="text-center">
                             <p class="title-ket">R. Sub kegiatan</p>
-                            <p class="ket">Penginputan data realisasi sub kegiatan kinerja, fisik dan keuangan dilakukan pertriwulan.</p>
+                            <p class="ket">Penginputan data realisasi sub kegiatan kinerja, fisik dan keuangan dilakukan
+                                pertriwulan.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 d-flex">
+                <div class="col-md-4 d-flex" data-aos="zoom-in" data-aos-duration="2300">
                     <div class="card">
                         <img src="image/capaian-kinerja.png" alt="">
                         <div class="text-center">
                             <p class="title-ket">Capaian Kinerja</p>
-                            <p class="ket">Penginputan data capaian kinerja program, kegiatan dan sub kegiatan perangkat daerah</p>
+                            <p class="ket">Penginputan data capaian kinerja program, kegiatan dan sub kegiatan perangkat
+                                daerah</p>
                         </div>
                     </div>
                 </div>
@@ -250,17 +370,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <p class="title">Output Laporan</span>
+                    <p class="title" data-aos="zoom-down" data-aos-duration="2000">Output Laporan</span>
                     </p>
 
                     <div class="row">
-                        <div class="col-md-3 col-6 d-flex mb-md-4 mb-3">
+                        <div class="col-md-3 col-6 d-flex mb-md-4 mb-3" data-aos="fade-right" data-aos-duration="2000">
                             <div class="card">
                                 <img src="image/laporan1.png" alt="">
                                 <p class="ket">Laporan Realisasi Keuangan</p>
                             </div>
                         </div>
-                        <div class="col-md-3 col-6 d-flex mb-md-4 mb-3">
+                        <div class="col-md-3 col-6 d-flex mb-md-4 mb-3" data-aos="fade-right" data-aos-duration="2000">
                             <div class="card">
                                 <img src="image/laporan2.png" alt="">
                                 <p class="ket">Laporan
@@ -268,7 +388,7 @@
                                     DAK</p>
                             </div>
                         </div>
-                        <div class="col-md-3 col-6 d-flex mb-md-4 mb-3">
+                        <div class="col-md-3 col-6 d-flex mb-md-4 mb-3" data-aos="fade-right" data-aos-duration="2000">
                             <div class="card">
                                 <img src="image/laporan3.png" alt="">
                                 <p class="ket">Laporan
@@ -278,7 +398,7 @@
                         </div>
                         <div class="col-md-3 col-0">
                         </div>
-                        <div class="col-md-3 col-6 d-flex mb-md-4 mb-3">
+                        <div class="col-md-3 col-6 d-flex mb-md-4 mb-3" data-aos="fade-right" data-aos-duration="2000">
                             <div class="card">
                                 <img src="image/laporan4.png" alt="">
                                 <p class="ket">Laporan
@@ -286,7 +406,7 @@
                                     RENSTRA/RPJMD</p>
                             </div>
                         </div>
-                        <div class="col-md-3 col-6 d-flex mb-md-4 mb-3">
+                        <div class="col-md-3 col-6 d-flex mb-md-4 mb-3" data-aos="fade-right" data-aos-duration="2000">
                             <div class="card">
                                 <img src="image/laporan5.png" alt="">
                                 <p class="ket">Laporan
@@ -294,7 +414,7 @@
                                     RENDA/RKPD</p>
                             </div>
                         </div>
-                        <div class="col-md-3 col-6 d-flex mb-md-4 mb-3">
+                        <div class="col-md-3 col-6 d-flex mb-md-4 mb-3" data-aos="fade-right" data-aos-duration="2000">
                             <div class="card">
                                 <img src="image/laporan6.png" alt="">
                                 <p class="ket">Laporan Daftar
@@ -302,7 +422,7 @@
                                     Kegiatan</p>
                             </div>
                         </div>
-                        <div class="col-md-3 col-6 d-flex mb-md-4 mb-3">
+                        <div class="col-md-3 col-6 d-flex mb-md-4 mb-3" data-aos="fade-right" data-aos-duration="2000">
                             <div class="card">
                                 <img src="image/laporan7.png" alt="">
                                 <p class="ket">Visualisasi
@@ -320,44 +440,45 @@
 
     <section class="client">
         <div class="container">
-            <p class="title">E-Monev Afila Telah Menjadi Pilihan Utama di Berbagai Daerah</p>
+            <p class="title" data-aos="zoom-in" data-aos-duration="2000">E-Monev Afila Telah Menjadi Pilihan Utama di
+                Berbagai Daerah</p>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2000">
                     <div class="card">
                         <img src="image/luwu.png" alt="">
                         <p class="ket">Kabupaten
                             Luwu</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2600">
                     <div class="card">
                         <img src="image/sidrap.png" alt="">
                         <p class="ket">Kabupaten
                             Sidenreng Rappang</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2300">
                     <div class="card">
                         <img src="image/gowa.png" alt="">
                         <p class="ket">Kabupaten
                             Gowa</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2000">
                     <div class="card">
                         <img src="image/kolaka.png" alt="">
                         <p class="ket">Kabupaten
                             Kolaka</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2600">
                     <div class="card">
                         <img src="image/selayar.png" alt="">
                         <p class="ket">Kabupaten
                             Selayar</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2300">
                     <div class="card">
                         <img src="image/kolaka2.png" alt="">
                         <p class="ket">Bappeda Kabupaten
@@ -376,15 +497,17 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="row">
-                            <div class="col-md-4 align-self-center">
+                            <div class="col-md-4 align-self-center" data-aos="zoom-in" data-aos-duration="2300">
                                 <img src="image/logo-lkpp.svg" width="100%" alt="">
                             </div>
-                            <div class="col-md-8 ps-md-5 ps-0">
+                            <div class="col-md-8 ps-md-5 ps-0" data-aos="fade-right" data-aos-duration="2800">
                                 <p class="title">Nikmati Kemudahan Pengadaan
                                     di e-Catalogue LKPP</p>
                                 <p class="subtitle">Produk kami tersedia di e-Catalogue LKPP! Nikmati pengadaan yang
                                     lebih mudah, administrasi yang lebih lancar, dan transaksi yang lebih aman. Klik
                                     Sekarang dan temukan solusi terbaik untuk kebutuhan Anda!</p>
+                                <a href="https://e-katalog.lkpp.go.id/katalog/produk/detail/57541427?type=regency&location_id=564"
+                                    target="_blank" class="btn-display">Display e-Catalouge LKPP</a>
                             </div>
                         </div>
                     </div>
@@ -421,9 +544,11 @@
                 <div class="row">
                     <div class="col-md-6 align-self-center">
                         <div class="p-5">
-                            <p class="title">LET’S BE CONNECTED</p>
-                            <p class="subtitle">Interested to grow with us?</p>
-                            <p class="keterangan">Challenge us. We will happy to work with you to create the really cool
+                            <p class="title" data-aos="zoom-in" data-aos-duration="2000">LET’S BE CONNECTED</p>
+                            <p class="subtitle" data-aos="zoom-in" data-aos-duration="2300">Interested to grow with us?
+                            </p>
+                            <p class="keterangan" data-aos="zoom-in" data-aos-duration="3000">Challenge us. We will
+                                happy to work with you to create the really cool
                                 stuff.</p>
                             <a href="https://wa.me/6281144411201?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Anda"
                                 target="_blank" class="btn-get-in">Get In Touch</a>
@@ -494,21 +619,67 @@
     </footer>
 
 
+    <!--begin::Scrolltop-->
+    <div id="scrolltop" class="scrolltop">
+        <!--begin::Svg Icon | path: icons/duotone/Navigation/Up-2.svg-->
+        <span class="svg-icon">
+            <svg xmlns="http://www.w3.org/2300/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                height="24px" viewBox="0 0 24 24" version="1.1">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <polygon points="0 0 24 0 24 24 0 24" />
+                    <rect fill="#fff" opacity="0.5" x="11" y="10" width="2" height="10" rx="1" />
+                    <path
+                        d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z"
+                        fill="#fff" fill-rule="nonzero" />
+                </g>
+            </svg>
+        </span>
+        <!--end::Svg Icon-->
+    </div>
+
+    <div class="wa-hubungi-kami">
+        <a href="https://wa.me/6281144411201?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Anda" target="_blank">
+            <img src="image/whatsapp.png" alt="">
+        </a>
+        <div class="popover-top">
+            <img src="image/barcode_afila.png" alt="Barcode" class="popover-barcode">
+            <p class="mb-0" style="font-size: 12px;">Scan the code</p>
+        </div>
+        <div class="popover-left">
+            <p class="popover-text text-nowrap mb-0">Hubungi Kami</p>
+        </div>
+    </div>
+
+    <script>
+        // Function to show or hide the scrolltop button based on scroll position
+        function handleScroll() {
+            const scrolltopButton = document.getElementById('scrolltop');
+            if (window.scrollY > 700) {
+                scrolltopButton.classList.add('show');
+            } else {
+                scrolltopButton.classList.remove('show');
+            }
+        }
+
+        // Add scroll event listener
+        window.addEventListener('scroll', handleScroll);
+
+        // Add click event listener for scrolltop button
+        document.getElementById('scrolltop').addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-    <script>
-        window.addEventListener('scroll', function () {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) { // Ganti 50 dengan jarak scroll yang diinginkan
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
+    <script src="js/main.js"></script>
 
-    </script>
 
     <script>
         // Function to share the page
@@ -557,6 +728,93 @@
         document.getElementById('share-facebook').addEventListener('click', () => sharePage('facebook'));
         document.getElementById('salin').addEventListener('click', () => sharePage('copy'));
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('submitButton').addEventListener('click', function (event) {
+                event.preventDefault(); // Prevent default form submission
+
+                // Get form values
+                const instansi = document.getElementById('instansi').value;
+                const nama = document.getElementById('nama').value;
+                const jabatan = document.getElementById('jabatan').value;
+                const notelp = document.getElementById('notelp').value;
+                const email = document.getElementById('email').value;
+                const dokumen = document.querySelector('input[name="dokumen"]:checked')?.value;
+
+                // Check if all required fields are filled
+                if (instansi && nama && jabatan && notelp && email && dokumen) {
+                    // Prepare data for API
+                    const data = {
+                        nama_instansi: instansi,
+                        nama: nama,
+                        jabatan: jabatan,
+                        notelp: notelp,
+                        email: email,
+                        jenis_dokumen: dokumen
+                    };
+
+                    // Send data to API
+                    fetch('https://afila.co.id/api/demoaplikasi', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content
+                        },
+                        body: JSON.stringify(data)
+                    })
+                        .then(response => {
+                            if (!response.ok) {
+                                return response.text().then(text => {
+                                    throw new Error('Network response was not ok. Response: ' + text);
+                                });
+                            }
+                            return response.json();
+                        })
+                        .then(data => {
+                            console.log('Success:', data);
+                            // Show success alert
+                            Swal.fire({
+                                title: 'Sukses!',
+                                text: 'Data berhasil dikirim.',
+                                icon: 'success',
+                                confirmButtonText: 'OK'
+                            }).then(() => {
+                                // Close modal
+                                var modal = bootstrap.Modal.getInstance(document.getElementById('exampleModal'));
+                                modal.hide();
+                                // Optionally, reset the form or perform other actions
+                                document.getElementById('demoForm').reset();
+                            });
+                        })
+                        .catch(error => {
+                            console.error('Error:', error.message);
+                            Swal.fire({
+                                title: 'Terjadi Kesalahan!',
+                                text: 'Terjadi kesalahan: ' + error.message,
+                                icon: 'error',
+                                confirmButtonText: 'OK'
+                            });
+                        });
+
+                } else {
+                    Swal.fire({
+                        title: 'Perhatian!',
+                        text: 'Silakan isi semua kolom.',
+                        icon: 'warning',
+                        confirmButtonText: 'OK'
+                    });
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>
