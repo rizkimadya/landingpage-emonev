@@ -33,6 +33,8 @@
     <meta name="twitter:site" content="@yourtwitterhandle">
 
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.bundle.css"> -->
+    <link rel="stylesheet" href="theme.css">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -440,54 +442,208 @@
 
     <section class="client">
         <div class="container">
-            <p class="title" data-aos="zoom-in" data-aos-duration="2000">E-Monev Afila Telah Menjadi Pilihan Utama di
-                Berbagai Daerah</p>
-            <div class="row">
-                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2000">
-                    <div class="card">
-                        <img src="image/luwu.png" alt="">
-                        <p class="ket">Kabupaten
-                            Luwu</p>
+            <p class="title" data-aos="zoom-in" data-aos-duration="2000">
+                E-Monev Afila Telah Menjadi Pilihan Utama di Berbagai Daerah
+            </p>
+            
+            <!-- Carousel for Web -->
+            <div class="carousel slide pt-6 tampilan-web" id="carouselExampleWebClient" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="row">
+                            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2000">
+                                <div class="card">
+                                    <img src="image/luwu.png" alt="">
+                                    <p class="ket">Kabupaten Luwu</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2600">
+                                <div class="card">
+                                    <img src="image/sidrap.png" alt="">
+                                    <p class="ket">Kabupaten Sidenreng Rappang</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2300">
+                                <div class="card">
+                                    <img src="image/gowa.png" alt="">
+                                    <p class="ket">Kabupaten Gowa</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2000">
+                                <div class="card">
+                                    <img src="image/kolaka.png" alt="">
+                                    <p class="ket">Kabupaten Kolaka</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2600">
+                                <div class="card">
+                                    <img src="image/selayar.png" alt="">
+                                    <p class="ket">Kabupaten Selayar</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2300">
+                                <div class="card">
+                                    <img src="image/kolaka2.png" alt="">
+                                    <p class="ket">Bappeda Kabupaten Kolaka</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <div class="row">
+                            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2000">
+                                <div class="card">
+                                    <img src="image/luwu.png" alt="">
+                                    <p class="ket">Kabupaten Luwu</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2600">
+                                <div class="card">
+                                    <img src="image/sidrap.png" alt="">
+                                    <p class="ket">Kabupaten Sidenreng Rappang</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2300">
+                                <div class="card">
+                                    <img src="image/gowa.png" alt="">
+                                    <p class="ket">Kabupaten Gowa</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2000">
+                                <div class="card">
+                                    <img src="image/kolaka.png" alt="">
+                                    <p class="ket">Kabupaten Kolaka</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2600">
+                                <div class="card">
+                                    <img src="image/selayar.png" alt="">
+                                    <p class="ket">Kabupaten Selayar</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2300">
+                                <div class="card">
+                                    <img src="image/kolaka2.png" alt="">
+                                    <p class="ket">Bappeda Kabupaten Kolaka</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2600">
-                    <div class="card">
-                        <img src="image/sidrap.png" alt="">
-                        <p class="ket">Kabupaten
-                            Sidenreng Rappang</p>
+    
+                <!-- Carousel Indicators -->
+                <div class="row px-3 px-md-0 mt-1">
+                    <div class="col-12 position-relative d-flex justify-content-between">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carouselExampleWebClient" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+                            <li data-bs-target="#carouselExampleWebClient" data-bs-slide-to="1" aria-label="Slide 2"></li>
+                        </ol>
+                        <div class="d-flex">
+                            <a class="carousel-control-prev carousel-icon z-index-2" href="#carouselExampleWebClient" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next carousel-icon z-index-2" href="#carouselExampleWebClient" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2300">
-                    <div class="card">
-                        <img src="image/gowa.png" alt="">
-                        <p class="ket">Kabupaten
-                            Gowa</p>
+            </div>
+    
+            <!-- Carousel for Mobile -->
+            <div class="carousel slide pt-6 tampilan-mobile" id="carouselExampleClientMobile" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="row">
+                            <div class="col-12" data-aos="zoom-in" data-aos-duration="2000">
+                                <div class="card">
+                                    <img src="image/luwu.png" alt="">
+                                    <p class="ket">Kabupaten Luwu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <div class="row">
+                            <div class="col-12" data-aos="zoom-in" data-aos-duration="2600">
+                                <div class="card">
+                                    <img src="image/sidrap.png" alt="">
+                                    <p class="ket">Kabupaten Sidenreng Rappang</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <div class="row">
+                            <div class="col-12" data-aos="zoom-in" data-aos-duration="2300">
+                                <div class="card">
+                                    <img src="image/gowa.png" alt="">
+                                    <p class="ket">Kabupaten Gowa</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <div class="row">
+                            <div class="col-12" data-aos="zoom-in" data-aos-duration="2000">
+                                <div class="card">
+                                    <img src="image/kolaka.png" alt="">
+                                    <p class="ket">Kabupaten Kolaka</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <div class="row">
+                            <div class="col-12" data-aos="zoom-in" data-aos-duration="2600">
+                                <div class="card">
+                                    <img src="image/selayar.png" alt="">
+                                    <p class="ket">Kabupaten Selayar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <div class="row">
+                            <div class="col-12" data-aos="zoom-in" data-aos-duration="2300">
+                                <div class="card">
+                                    <img src="image/kolaka2.png" alt="">
+                                    <p class="ket">Bappeda Kabupaten Kolaka</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2000">
-                    <div class="card">
-                        <img src="image/kolaka.png" alt="">
-                        <p class="ket">Kabupaten
-                            Kolaka</p>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2600">
-                    <div class="card">
-                        <img src="image/selayar.png" alt="">
-                        <p class="ket">Kabupaten
-                            Selayar</p>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="zoom-in" data-aos-duration="2300">
-                    <div class="card">
-                        <img src="image/kolaka2.png" alt="">
-                        <p class="ket">Bappeda Kabupaten
-                            Kolaka</p>
+    
+                <!-- Carousel Indicators -->
+                <div class="row px-3 px-md-0 mt-1">
+                    <div class="col-12 position-relative d-flex justify-content-between">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carouselExampleClientMobile" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+                            <li data-bs-target="#carouselExampleClientMobile" data-bs-slide-to="1" aria-label="Slide 2"></li>
+                            <li data-bs-target="#carouselExampleClientMobile" data-bs-slide-to="2" aria-label="Slide 3"></li>
+                            <li data-bs-target="#carouselExampleClientMobile" data-bs-slide-to="3" aria-label="Slide 4"></li>
+                            <li data-bs-target="#carouselExampleClientMobile" data-bs-slide-to="4" aria-label="Slide 5"></li>
+                            <li data-bs-target="#carouselExampleClientMobile" data-bs-slide-to="5" aria-label="Slide 6"></li>
+                        </ol>
+                        <div class="d-flex">
+                            <a class="carousel-control-prev carousel-icon z-index-2" href="#carouselExampleClientMobile" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next carousel-icon z-index-2" href="#carouselExampleClientMobile" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
 
 
     <!-- lkpp -->
